@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/apple/CLionProjects/Lesson1/test.c
+stdio.h
+-
+sys/time.h
+-
+stdio.h
+-
+math.h
+-
+stdlib.h
+-
+
