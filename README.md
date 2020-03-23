@@ -27,7 +27,7 @@ $ gcc -O3 -Wall -Werror -floop-parallelize-all -ftree-parallelize-loops=K test.c
 $ ./lab1-k
 ```
 
-我在这步报错，你们看看是不是显卡问题
+我把K设置成40就报错，报错信息如下，你们看看是不是显卡问题
 
 ```shell
 clang: error: unknown argument: '-floop-parallelize-all'
