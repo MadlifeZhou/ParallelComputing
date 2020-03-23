@@ -108,15 +108,15 @@ int main(int argc, char* argv[]){
     int N;
 
     if(argc > 1)
-            N = (size_t) atoi(argv[1]);
-        else
-            N = DEFAULT_N;
+        N = (size_t) atoi(argv[1]);
+    else
+        N = DEFAULT_N;
 
     int arr1Size = N;
     int arr2Size = N/2;
     // define two array m1 and m2
-    double *m1 = malloc(sizeof(double) * 20);
-    double *m2 = malloc(sizeof(double) * 20);
+    double *m1 = malloc(sizeof(double) * arr1Size);
+    double *m2 = malloc(sizeof(double) * arr2Size);
     gettimeofday(&T1,NULL);
 
     for (unsigned int i = 0; i < 50; ++i) {
@@ -136,7 +136,7 @@ int main(int argc, char* argv[]){
         // reduce Stage
         double X = reduce(m2,arr2Size);
 
-        printf("X:%f\n",X);
+        printf("%d => X:%f\n",i+1,X);
     }
     gettimeofday(&T2,NULL);
 
@@ -146,8 +146,8 @@ int main(int argc, char* argv[]){
 //    printf("%d\n",T2.tv_sec);
 //    printf("%d\n",T2.tv_usec);
     printf("\n N=%d. Time Passed: %lf ms\n", N, delta_ms);
-    free(m1);
-    free(m2);
+//    free(m1);
+//    free(m2);
 
     return 0;
 }
