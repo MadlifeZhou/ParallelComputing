@@ -22,7 +22,7 @@ $ ./lab1
 需要将其中的 ***K*** 替换成一个数字，***K*** 可以改变其中数组的长度，具体看实验要求
 
 ```shell
-$ gcc -O3 -Wall -Werror -floop-parallelize-all -ftree-parallelize-loops=**K** test.c -o lab1-K
+$ gcc -O3 -Wall -Werror -floop-parallelize-all -ftree-parallelize-loops=K test.c -o lab1-K
 
 $ ./lab1-k
 ```
