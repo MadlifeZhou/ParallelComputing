@@ -5,7 +5,7 @@ ITMO俄方课程
 开发环境： GCC 11.0.0 , MacOS , Clion
 
 
-## 3.23 Lab1
+## 3.23 Lab1 使用GCC自动化并行加速
 
 **lab1**写在 **test.c**文件中
 
