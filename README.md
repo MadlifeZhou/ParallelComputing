@@ -34,3 +34,37 @@ clang: error: unknown argument: '-floop-parallelize-all'
 clang: error: unknown argument: '-ftree-parallelize-loops=40'
 ```
 
+## 4.3 Lab2 使用Framewave进行并行计算
+
+1. 解压你需要的安装包
+2. 建立链接
+
+```shell
+// 如果你是linux,假设解压的文件夹是ExampleDir，cd进安装包的lib目录，建立链接
+ln -sf ./libfwBase.so.1.0.0 libfwBase.so
+ln -sf ./libfwImage.so.1.0.0 libfwImage.so
+ln -sf ./libfwJPEG.so.1.0.0 libfwJPEG.so
+ln -sf ./libfwSignal.so.1.0.0 libfwSignal.so
+ln -sf ./libfwVideo.so.1.0.0 libfwVideo.so
+```
+
+```shell
+// 如果你是mac,假设解压的安装包是ExampleDir，cd进安装包的lib目录，建立链接
+cd ExampleDir/FW_1.0_Mac64/lib
+ln -sf ./libfwBase-1.0.dylib libfwBase.dylib
+ln -sf ./libfwImage-1.0.dylib libfwImage.dylib
+ln -sf ./libfwJPEG-1.0.dylib libfwJPEG.dylib
+ln -sf ./libfwSignal-1.0.dylib libfwSignal.dylib
+ln -sf ./libfwVideo-1.0.dylib libfwVideo.dylib
+```
+
+3. 把```fwSignal.h```和```fwBase.h```拷进项目目录
+
+   ```c
+   #include "fwSignal.h"
+   #include "fwBase.h"
+   ```
+
+   
+
+   
